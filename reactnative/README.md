@@ -8,4 +8,4 @@ npm run android
 npm run ios
 ```
 
-If everything is set up correctly, you should see your new app running in your Android/IOS emulator shortly
+If everything is set up correctly, you should see app running in your Android/IOS emulator shortly
