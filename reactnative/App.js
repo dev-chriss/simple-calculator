@@ -22,8 +22,6 @@ import {
   Colors
 } from 'react-native/Libraries/NewAppScreen';
 
-import SwitchExample from './components/switch_example.js'
-
 const App: () => React$Node = () => {
 
   const [number1, setNumber1] = useState(0);
@@ -36,9 +34,6 @@ const App: () => React$Node = () => {
 
   calculate = (operator = "") => {
     let list = []
-
-    console.log(number1.toString(), number2.toString(), number3.toString())
-    console.log(checked1, checked2, checked3)
 
     if (checked1) list.push(parseInt(number1))
     if (checked2) list.push(parseInt(number2))
@@ -67,17 +62,14 @@ const App: () => React$Node = () => {
 
   toggleSwitch1 = (value) => {
     setChecked1(value)
-    // console.log('Switch 1 is: ' + checked1)
   }
 
   toggleSwitch2 = (value) => {
     setChecked2(value)
-    // console.log('Switch 2 is: ' + checked2)
   }
 
   toggleSwitch3 = (value) => {
     setChecked3(value)
-    // console.log('Switch 3 is: ' + checked3)
   }
 
   return (
